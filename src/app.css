@@ -1,0 +1,143 @@
+:root {
+  --marked-element:#ffae00;
+  --hover-menu-color:#161616;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.top-menu {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  padding: 8px 20px;
+  border-radius: 30px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.top-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.top-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+  font-weight: 400;
+}
+
+.top-menu a:hover {
+  color: var(--hover-menu-color);
+}
+
+.footer-page-part-social-media {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-page-part-social-media-images {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-page-part-social-media-images a {
+  display: block;
+  width: 28px;
+  height: 28px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-page-part-social-media-images a:hover {
+  transform: translateY(-2px);
+}
+
+.footer-page-part-social-media-images svg {
+  border-radius: 30px;
+  backdrop-filter: blur(1px);
+  width: 100%;
+  height: 100%;
+  fill: white;
+  filter: drop-shadow(0 2px 4px rgba(86, 9, 209, 0.3));
+}
+
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  padding: 20px;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.not-found-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+.not-found-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 1.5rem 0 2.5rem;
+  line-height: 1.6;
+}
+
+.not-found-link {
+  font-family: 'Inter', sans-serif;
+  color: var(--marked-element);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.2s;
+}
+
+.not-found-link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .top-menu {
+    top: 15px;
+    padding: 6px 14px;
+  }
+  .top-menu a {
+    font-size: 0.9rem;
+  }
+  .top-menu li:not(:last-child)::after {
+    margin-left: 8px;
+  }
+}

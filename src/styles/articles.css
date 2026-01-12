@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400&display=swap');
+
+.articles-page {
+  padding: 80px 5%;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 3px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.articles-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.articles-card {
+  padding-left: 1.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.articles-card:hover {
+  opacity: 0.9;
+}
+
+.articles-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.articles-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  color: white;
+  line-height: 1.2;
+}
+
+.articles-excerpt {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+
+.articles-date {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85em;
+  color: var(--marked-element);
+}
+
+@media (max-width: 768px) {
+  .articles-page {
+    padding: 70px 4%;
+  }
+}
