@@ -9,51 +9,62 @@
   backdrop-filter: blur(2px);
 }
 
+.article-subtitle, .article-page p, .photo-caption, .article-page li {
+    font-family: 'Inter', sans-serif;
+}
+
+.article-page p, .article-page li {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.article-title, .article-page h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.signature, .photo-caption, .article-subtitle {
+    font-style: italic;
+}
+
 .article-title {
-  font-family: 'Playfair Display', serif;
   font-size: 2.5em;
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
   letter-spacing: 2px;
-  color: white;
   line-height: 1.1;
 }
 
 .article-subtitle {
-  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 3rem;
-  font-style: italic;
 }
 
 .article-page p {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.92);
   margin-bottom: 1.6em;
 }
 
+.article-page li {
+  
+  margin-bottom: 1.4em;
+}
+
 .article-page h2 {
-  font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   margin: 2.5rem 0 1.2rem;
-  color: white;
   letter-spacing: 1px;
 }
 
 .signature {
   margin-top: 3rem;
-  font-style: italic;
   opacity: 0.8;
   text-align: right;
 }
 
 .article-photo {
   margin: 3rem auto;
-  max-width: 760px;
   width: 100%;
 }
 
@@ -68,17 +79,7 @@
 .photo-caption {
   display: block;
   margin-top: 12px;
-  font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.65);
   text-align: center;
-  font-style: italic;
-}
-
-.article-page li {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.92);
-  margin-bottom: 1.4em;
 }

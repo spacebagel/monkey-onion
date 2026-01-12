@@ -39,8 +39,11 @@
   line-height: 1.2;
 }
 
-.articles-excerpt {
+.articles-excerpt, .articles-date {
   font-family: 'Inter', sans-serif;
+}
+
+.articles-excerpt {
   font-size: 1em;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
@@ -48,7 +51,6 @@
 }
 
 .articles-date {
-  font-family: 'Inter', sans-serif;
   font-size: 0.85em;
   color: var(--marked-element);
 }
