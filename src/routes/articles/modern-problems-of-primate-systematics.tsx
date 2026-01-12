@@ -8,7 +8,7 @@ export default function ModernProblemsOfPrimateSystematics() {
       <Title>Modern Problems of Primate Systematics - MONKEY.onion</Title>
       <main class="article-page">
         <h1 class="article-title">MODERN PROBLEMS OF PRIMATE SYSTEMATICS</h1>
-
+        <p class="article-subtitle">Yes, lemurs are monkeys too..</p>
         <Photo src="/gallery/lemur-taxonomy.png" alt="Lemur classification chart" caption="Lemur classification" />
 
         <p>
